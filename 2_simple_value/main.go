@@ -8,8 +8,6 @@ func main() {
 
 	// inti
 	fmt.Println(1+2)
-
-
 	//  string
 	fmt.Println("Hello "+ "World")
 
