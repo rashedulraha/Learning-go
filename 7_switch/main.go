@@ -38,7 +38,7 @@ func main() {
 
 	// ! type switch
 
-	whoAmi := func(i interface{}) {
+	whoAmi := func(i any) {
 		switch t := i.(type) {
 		case int:
 			fmt.Println("ist an integer")
@@ -53,7 +53,8 @@ func main() {
 	}
 
 	
-whoAmi(45)
+whoAmi(45.45)
 
 }
+
 
