@@ -1,10 +1,12 @@
 package main
 
+import "fmt"
+
 // for only construct in go  for looping
  func main (){
 
 
-	// while looping
+	//! while looping
 
 	// i:=1
 	//  for i <=3{
@@ -21,11 +23,22 @@ package main
 	// }
 
 
-	//  classic for loop 
-	 for  i:= 0 ; i<=3; i++{
+	//!  classic for loop 
+	//  for  i:= 0 ; i<=3; i++{
 
-		println(i)
+	// 	if i == 2 {
+	// 		continue
+	// 	}
 
+	// 	println(i)
+
+	//  }
+
+
+	// ! range 
+	 for i := range 5 {
+
+		 fmt.Println(i)
 	 }
 
  }
