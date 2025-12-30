@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 // -> maps
  func main(){
@@ -53,8 +56,19 @@ import "fmt"
 			fmt.Println("all oke")
 		}else{
 			fmt.Println("not key")
+
+			
 		}
 
+
+
+		//  check map equal 
+
+		 result1 := map[string]int{"price" :45 , "quntity":8 }
+		 result2 := map[string]int{"price" :45 , "quntity":88 }
+
+
+		 fmt.Println(maps.Equal(result1,result2))
 
 
 
