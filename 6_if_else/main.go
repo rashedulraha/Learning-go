@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// age := 17
 	// if age >= 18 {
@@ -30,10 +28,12 @@ func main() {
 	// 	fmt.Println("No")
 	// }
 
-	if age := 15; age >= 18 {
-		fmt.Println("person in adult" , age)
-	}else if age >=12 {
-		fmt.Println("person in teenager" , age)
-	}
+	// if age := 21; age >= 18 {
+	// 	fmt.Println("person in adult" , age)
+	// }else if age >=12 {
+	// 	fmt.Println("person in teenager" , age)
+	// }
+
+	//!  go dose not have ternary operator . you will have to use normal if else.
 
 }
