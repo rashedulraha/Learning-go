@@ -9,9 +9,11 @@ func main() {
 	
 
 	// using const 
-	var age string = "45"
-	fmt.Println(age)
+	// var age string = "45"
+	// fmt.Println(age)
 
+
+	
 	
 
 
