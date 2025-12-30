@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // slices -> dynamic
 // most use constructs in  go
 // + useful method
@@ -40,11 +38,26 @@ import "fmt"
 
 	//  ! slice operator 
 
-	var number   =[]int{1,2,3,4,5}
-	// fmt.Println(number[2:4])
-	// fmt.Println(number[2])
-	// fmt.Println(number[:2])
-	fmt.Println(number[1:])
+	// var number   =[]int{1,2,3,4,5}
+	// // fmt.Println(number[2:4])
+	// // fmt.Println(number[2])
+	// // fmt.Println(number[:2])
+	// fmt.Println(number[1:])
+
+
+
+	//  slices in build feature 
+	//  var number1 = []int{1,2, 5}
+	//  var number2  = []int{1,2 , 4}
+
+
+	//  fmt.Println(slices.Equal(number1,number2))
+
+
+	
+
+
+
 
 
 
