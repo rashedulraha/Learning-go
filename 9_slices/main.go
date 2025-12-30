@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // slices -> dynamic
 // most use constructs in  go
 // + useful method
@@ -27,10 +25,20 @@ import "fmt"
 
 	//! copy function
 
-	 var number = make([]int, 2, 5)
+	//  var number = make([]int, 0, 5)
+	//  number =append(number, 1)
+	//  var number2  =make([]int, len(number))
 
-	  number[0]=4
 
-	 fmt.Println(number)
+	//  copy(number2,number)
 
+	//  fmt.Println(number,number2)
+
+
+
+	//  ! slice operator 
+		
+
+
+  
  }
