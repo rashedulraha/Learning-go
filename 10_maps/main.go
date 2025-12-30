@@ -42,6 +42,19 @@ import "fmt"
 	 fmt.Println(m)
 
 
+	//  ! create manual map 
+
+	 products:=map[string]int{"price" :45 ,"model":5 }
+
+	 fmt.Println(products)
+
+	 _,ok :=products["prices"]
+	  if ok {
+			fmt.Println("all oke")
+		}else{
+			fmt.Println("not key")
+		}
+
 
 
 
