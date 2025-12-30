@@ -1,9 +1,11 @@
 package main
 
-func main() {
-	// simple switch
+import "fmt"
 
-	i := 2
+func main() {
+	//! simple switch
+
+	i := 6
 
 	switch i {
 	case 1:
@@ -17,6 +19,41 @@ func main() {
 	case 5:
 		println("five")
 
+	default:
+		println("no match here")
+
 	}
 
+	//!  multiple condition switch
+
+	// switch time.Now().Weekday(){
+
+	// case time.Saturday,time.Tuesday:
+	// 	println("it's weekend")
+
+	// 	 default :
+	// 	 println("it's workday")
+
+	// }
+
+	// ! type switch
+
+	whoAmi := func(i interface{}) {
+		switch t := i.(type) {
+		case int:
+			fmt.Println("ist an integer")
+		case string :
+			fmt.Println("i'st string")
+		case bool :
+			fmt.Println("i's boolean")
+		default: 
+		fmt.Println("other" , t)
+		}
+
+	}
+
+	
+whoAmi(45)
+
 }
+
