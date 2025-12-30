@@ -12,13 +12,28 @@ func main() {
 
 	// else if
 
-	age := 12
+	// age := 12
 
-	if age >= 18 {
-		fmt.Println("person in adult")
-	}else if age >=12{
-		fmt.Println("person in teenager")
-	}else{
-		fmt.Println("person in kind")
+	// if age >= 18 {
+	// 	fmt.Println("person in adult")
+	// }else if age >=12{
+	// 	fmt.Println("person in teenager")
+	// }else{
+	// 	fmt.Println("person in kind")
+	// }
+
+	// var role = "admin"
+	// var hasPermission = true
+	// if role == "admin" && hasPermission == true {
+	// 	fmt.Println("yes")
+	// }else {
+	// 	fmt.Println("No")
+	// }
+
+	if age := 15; age >= 18 {
+		fmt.Println("person in adult" , age)
+	}else if age >=12 {
+		fmt.Println("person in teenager" , age)
 	}
+
 }
