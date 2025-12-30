@@ -13,8 +13,24 @@ import "fmt"
 	// var name []int
 	// fmt.Println(name==nil)
 
-	var number =make([]int, 4)
+	// var number =make([]int, 6 ,50)
+	// fmt.Println(cap(number))
 
-	 fmt.Println(number == nil)
+
+	// number = append(number, 5)
+	// fmt.Println(cap(number))
+	// fmt.Println(number)
+
+
+	//  fmt.Println(number == nil)
+
+
+	//! copy function
+
+	 var number = make([]int, 2, 5)
+
+	  number[0]=4
+
+	 fmt.Println(number)
 
  }
