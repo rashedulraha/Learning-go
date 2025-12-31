@@ -34,6 +34,14 @@ func main() {
 		}
 
 
+		// receiver type 
+
+		//  func (o,order) changeStatus(status string )  {
+		// 	o.status= status
+			
+		//  }
+	
+
 		myOrder.status = "paid"
 
 	 		fmt.Println("myOrder struct :" ,myOrder)
