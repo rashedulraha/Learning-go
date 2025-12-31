@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //! iterating over data structures
 func main(){
@@ -32,11 +34,22 @@ func main(){
 
 //?  map  iteration in map 
 
-m:=map[string]string{"name":"Rashedul" , "age" : "45"}
+// m:=map[string]string{"name":"Rashedul" , "age" : "45"}
 
- for k ,v :=range m {
-	fmt.Println(k,v)
+//  for k ,v :=range m {
+// 	fmt.Println(k,v)
+//  }
+
+
+// ! unicode code print rune 
+
+ for i , v :=range "Rashedul" {
+	fmt.Println(i,v , string(v))
  }
+
+
+
+
 
 
 
