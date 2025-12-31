@@ -20,6 +20,9 @@ func main(){
 	//  }
 
 
+	
+
+
 	//? some in range 
 
 			// sum:=0
