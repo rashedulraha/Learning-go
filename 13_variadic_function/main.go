@@ -16,7 +16,10 @@ func sum(number ...int) int {
 
 func main() {
 
-	result := sum(2, 4, 5, 4, 54, 5, 4, 5, 5 , 45)
+	num :=[]int{2,5,3,5,6,3,5,3}
+
+	// result := sum(2, 4, 5, 4, 54, 5, 4, 5, 5 , 45)
+	result := sum(num...)
 	fmt.Println(result)
 
 }
