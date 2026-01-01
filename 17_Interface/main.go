@@ -6,6 +6,8 @@ type payment struct{
 	gateway stripe
 }
 
+
+//  inter face
 func (p payment) makePayment(amount float32) {
 
 	// razorpayPaymentGW:=razorpay{}
@@ -39,7 +41,7 @@ func (r razorpay) pay(amount float32) {
 //   fake payment gateway 
 
  type fakePayment struct{}
- 
+
   func (f fakePayment) pay(amount float32){
 		fmt.Println("making payment using testing purpose",amount)
 	}
