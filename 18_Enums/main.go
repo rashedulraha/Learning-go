@@ -8,11 +8,10 @@ import "fmt"
 
 
 	 const(
-
-		received orderStatus = "Received"
-			Confirmed = "Confirmed"
-			Prepared ="Prepared"
-			Delivered ="Delivered"
+			received orderStatus = "Received"
+			Confirmed orderStatus = "Confirmed"
+			Prepared orderStatus = "Prepared"
+			Delivered orderStatus = "Delivered"
 	 )
 
 
