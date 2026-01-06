@@ -15,4 +15,16 @@ func main() {
 
 	fmt.Println(totalViews, like , avgViews)
 
+
+
+	//  Floating 
+
+
+	 rattingOne := 50.52
+	 rattingTwo:= 509.546
+
+	 TotalRatting:= rattingOne+ rattingTwo
+
+	 fmt.Println(TotalRatting)
+
 }
