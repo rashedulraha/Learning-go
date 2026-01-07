@@ -10,4 +10,4 @@ func main() {
 
 	fmt.Println(appName, maxUpload, discountPrice)
 
-}
+}	
