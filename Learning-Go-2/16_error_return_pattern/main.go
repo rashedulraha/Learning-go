@@ -19,7 +19,6 @@ func main() {
     currentBalance := 500.0
 
     withdrawAmount := 600.0
-		
     remainingBalance, err := withdraw(currentBalance, withdrawAmount)
 
 
