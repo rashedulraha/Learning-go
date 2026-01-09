@@ -20,11 +20,14 @@ func main() {
 	// *p -> defer ( go that address and read/write)
 
 	score := 10
-	fmt.Println("before:",score)
-
-	addScore(score)
+	fmt.Println("Before:",score)
+	
+	addScore(&score)
+	fmt.Println("After:",score)
 }
 
-func addScore(score int) {
-fmt.Println(score)
+func addScore(score *int) {
+	*score = *score +5
 }
+
+
