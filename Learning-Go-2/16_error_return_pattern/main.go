@@ -5,15 +5,29 @@ import (
 	"fmt"
 )
 
-func divide(a, b float32) (float32, error) {
-	if b == 0 {
-		return 0, errors.New("Cannot divide by zero")
-	}
 
-	return  a/b , nil
-
+func withdraw(balance float64, amount float64) (float64, error) {
+    if amount > balance {
+        return 0, errors.New("Your accepting balance not fount")
+    }
+    
+    newBalance := balance - amount
+    return newBalance, nil 
 }
 
 func main() {
-fmt.Println(divide(10,6))
+    currentBalance := 500.0
+
+    withdrawAmount := 600.0
+		
+    remainingBalance, err := withdraw(currentBalance, withdrawAmount)
+
+
+    if err != nil {
+        fmt.Println("Transition:", err)
+        return 
+    }
+
+    
+    fmt.Printf("withdraw successfully: %.2f\n", remainingBalance)
 }
