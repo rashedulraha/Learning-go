@@ -1,9 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/http"
+	"time"
 )
+
+//
 
 //!  json encoder encode details
 
@@ -11,6 +15,14 @@ import (
 
 	w.Header().Set("content-type" , "application/json")
 	w.WriteHeader(http.StatusOK)
+
+	res:= map[string]any{
+		"ok":true ,
+		"message":"json encoded successfully and all complete",
+		"dateTime":time.Now().UTC(),
+	}
+
+	_ = json.NewEncoder(w).Encode(res)
 
 
  }
