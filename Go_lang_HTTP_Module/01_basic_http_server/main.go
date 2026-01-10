@@ -13,13 +13,13 @@ func handleHandler(w http.ResponseWriter, r *http.Request){
 		return 
 	}
 
-	_,_ = w.Write([]byte("Hello from go net/http"))
+	_,_ = w.Write([]byte("Hello from go net/http server  and server name is Nothing"))
 
 }
 
 func main() {
 
-http.HandleFunc("/hello" , handleHandler)
+http.HandleFunc("/nothing" , handleHandler)
 
 fmt.Println("try going to 8000 port")
 err:= http.ListenAndServe(":8000" , nil)
