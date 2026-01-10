@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
+	"time"
 )
 
  func writeJSON(w http.ResponseWriter ,status int  ,data any ){
@@ -46,6 +48,21 @@ import (
 
 		return 
 	}
+
+	req.Name= strings.TrimSpace(req.Name)
+
+	if req.Name==""{
+		writeJSON(w, http.StatusBadRequest,map[string]any{
+			"ok":false,
+			"error":"Name must not be empty",
+		})
+		return 
+	}
+	writeJSON(w, http.StatusOK,  map[string]any{
+		"ok":true, 
+		"data":req, 
+		"timeStamp":time.Now().UTC(),
+	})
 
  }
 func main() {
