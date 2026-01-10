@@ -72,7 +72,7 @@ func main() {
 
 	http.HandleFunc("/external", externalHandler)
 
-	fmt.Println("Server is running on http://localhost:5300/external")
+	fmt.Println("Server is running on http://localhost:5300")
 
 	err := http.ListenAndServe(":5300", nil)
 	if err != nil {
