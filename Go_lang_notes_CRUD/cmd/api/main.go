@@ -3,9 +3,11 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"notes-api/db"
 	"notes-api/internal/config"
+	"notes-api/internal/server"
 ) 
 
 
@@ -16,7 +18,7 @@ import (
 		log.Fatalf("config err")
 	}
 
-	 client  , database , err := db.Connect(cfg)
+	 client  , _ , err := db.Connect(cfg)
 	 
 	  if err != nil {
 			log.Fatalf("Db error")
@@ -29,5 +31,12 @@ import (
 			}
 		}()
 
+		route := server.NewRouter()
+		
+		address:= fmt.Sprintf(":%s",cfg.ServerPORT)
+
+		 if err := route.Run( address); err != nil{
+			log.Fatalf("server failed")
+		 }
 
  }
